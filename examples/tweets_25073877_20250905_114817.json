@@ -1,0 +1,160 @@
+{
+  "export_info": {
+    "timestamp": "2025-09-05T11:48:17.640164",
+    "user_id": "25073877",
+    "tweet_count": 10,
+    "tool": "Twitter Client based on F2"
+  },
+  "tweets": [
+    {
+      "id": "mock_25073877_1",
+      "text": "这是用户25073877的第1条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-01T12:00:00Z",
+      "metrics": {
+        "like_count": 10,
+        "retweet_count": 5,
+        "reply_count": 2
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_2",
+      "text": "这是用户25073877的第2条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-02T12:00:00Z",
+      "metrics": {
+        "like_count": 20,
+        "retweet_count": 10,
+        "reply_count": 4
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_3",
+      "text": "这是用户25073877的第3条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-03T12:00:00Z",
+      "metrics": {
+        "like_count": 30,
+        "retweet_count": 15,
+        "reply_count": 6
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_4",
+      "text": "这是用户25073877的第4条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-04T12:00:00Z",
+      "metrics": {
+        "like_count": 40,
+        "retweet_count": 20,
+        "reply_count": 8
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_5",
+      "text": "这是用户25073877的第5条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-05T12:00:00Z",
+      "metrics": {
+        "like_count": 50,
+        "retweet_count": 25,
+        "reply_count": 10
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_6",
+      "text": "这是用户25073877的第6条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-06T12:00:00Z",
+      "metrics": {
+        "like_count": 60,
+        "retweet_count": 30,
+        "reply_count": 12
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_7",
+      "text": "这是用户25073877的第7条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-07T12:00:00Z",
+      "metrics": {
+        "like_count": 70,
+        "retweet_count": 35,
+        "reply_count": 14
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_8",
+      "text": "这是用户25073877的第8条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-08T12:00:00Z",
+      "metrics": {
+        "like_count": 80,
+        "retweet_count": 40,
+        "reply_count": 16
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_9",
+      "text": "这是用户25073877的第9条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-09T12:00:00Z",
+      "metrics": {
+        "like_count": 90,
+        "retweet_count": 45,
+        "reply_count": 18
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    },
+    {
+      "id": "mock_25073877_10",
+      "text": "这是用户25073877的第10条模拟推文 #示例 #测试",
+      "author": "user_25073877",
+      "created_at": "2024-01-10T12:00:00Z",
+      "metrics": {
+        "like_count": 100,
+        "retweet_count": 50,
+        "reply_count": 20
+      },
+      "hashtags": [
+        "#示例",
+        "#测试"
+      ]
+    }
+  ]
+}

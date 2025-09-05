@@ -1,0 +1,25 @@
+# Twitter推文拉取客户端依赖包
+
+# 核心依赖 (F2项目已通过模拟模块解决)
+
+# 基础依赖 (通常系统自带，无需安装)
+# asyncio  # Python 3.7+ 内置
+# json     # Python 内置 
+# logging  # Python 内置
+# pathlib  # Python 内置
+# typing   # Python 内置
+
+# 开发和测试依赖（可选）
+pytest>=7.2.0            # 测试框架
+pytest-asyncio>=0.21.0   # 异步测试支持
+black>=22.0.0             # 代码格式化
+flake8>=5.0.0             # 代码检查
+mypy>=1.0.0               # 类型检查
+
+# 数据可视化（可选）
+matplotlib>=3.6.0        # 图表绘制
+seaborn>=0.12.0          # 统计图表
+
+# 文本处理（可选）
+jieba>=0.42.1            # 中文分词
+wordcloud>=1.9.0         # 词云生成

@@ -1,0 +1,92 @@
+2025-09-05 15:44:23,414 - f2-trace - ERROR - Traceback (most recent call last):
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpcore/_async/connection.py", line 156, in _connect
+    stream = await stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 67, in start_tls
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/F2_correct/f2/crawlers/base_crawler.py", line 272, in get_fetch_data
+    response = await self.aclient.get(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        url, headers=self.crawler_headers, follow_redirects=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_client.py", line 1768, in get
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zhe/miniconda3/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/F2_correct/f2/crawlers/base_crawler.py", line 201, in _fetch_get_json
+    response = await self.get_fetch_data(endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/F2_correct/f2/crawlers/base_crawler.py", line 301, in get_fetch_data
+    raise APITimeoutError(
+    ...<9 lines>...
+    )
+f2.exceptions.api_exceptions.APITimeoutError: 请求端点超时。 链接：https://x.com/i/api/graphql/Tg82Ez_kxVaJf7OPbUdbCg/UserTweets?variables=%7B%22userId%22%3A%22elonmusk%22%2C%22count%22%3A1%2C%22cursor%22%3A%22%22%2C%22includePromotedContent%22%3Atrue%2C%22withQuickPromoteEligibilityTweetFields%22%3Atrue%2C%22withVoice%22%3Atrue%2C%22withV2Timeline%22%3Atrue%7D&features=%7B%22articles_preview_enabled%22%3A%20false%2C%20%22c9s_tweet_anatomy_moderator_badge_enabled%22%3A%20true%2C%20%22communities_web_enable_tweet_community_results_fetch%22%3A%20true%2C%20%22creator_subscriptions_quote_tweet_preview_enabled%22%3A%20false%2C%20%22creator_subscriptions_tweet_preview_api_enabled%22%3A%20true%2C%20%22freedom_of_speech_not_reach_fetch_enabled%22%3A%20true%2C%20%22graphql_is_translatable_rweb_tweet_is_translatable_enabled%22%3A%20true%2C%20%22longform_notetweets_consumption_enabled%22%3A%20true%2C%20%22longform_notetweets_inline_media_enabled%22%3A%20true%2C%20%22longform_notetweets_rich_text_read_enabled%22%3A%20true%2C%20%22responsive_web_edit_tweet_api_enabled%22%3A%20true%2C%20%22responsive_web_enhance_cards_enabled%22%3A%20false%2C%20%22responsive_web_graphql_exclude_directive_enabled%22%3A%20true%2C%20%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3A%20false%2C%20%22responsive_web_graphql_timeline_navigation_enabled%22%3A%20true%2C%20%22responsive_web_twitter_article_tweet_consumption_enabled%22%3A%20true%2C%20%22rweb_tipjar_consumption_enabled%22%3A%20true%2C%20%22rweb_video_timestamps_enabled%22%3A%20true%2C%20%22standardized_nudges_misinfo%22%3A%20true%2C%20%22tweet_awards_web_tipping_enabled%22%3A%20false%2C%20%22tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled%22%3A%20true%2C%20%22tweet_with_visibility_results_prefer_gql_media_interstitial_enabled%22%3A%20true%2C%20%22tweetypie_unmention_optimization_enabled%22%3A%20true%2C%20%22verified_phone_label_enabled%22%3A%20false%2C%20%22view_counts_everywhere_api_enabled%22%3A%20true%7D&fieldToggles=%7B%22withArticlePlainText%22%3A%20false%7D，代理：{'http://': None, 'https://': None}，异常类名：TwitterCrawler，异常详细信息：
+
