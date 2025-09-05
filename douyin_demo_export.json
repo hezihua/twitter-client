@@ -1,0 +1,138 @@
+{
+  "export_time": "2025-09-05T17:32:26.452219",
+  "data_source": "模拟数据",
+  "profile_source": "模拟数据",
+  "user_profile": {
+    "unique_id": "demo_user_2024",
+    "nickname": "抖音演示用户",
+    "avatar_larger": {
+      "url_list": [
+        "https://example.com/demo_avatar.jpg"
+      ]
+    },
+    "follower_count": 125000,
+    "following_count": 800,
+    "total_favorited": 3200000,
+    "aweme_count": 156,
+    "signature": "分享生活中的美好瞬间 ✨",
+    "verify_info": "认证用户",
+    "region": "中国",
+    "city": "北京"
+  },
+  "videos": [
+    {
+      "aweme_id": "7300000000000000001",
+      "desc": "这是一个模拟的抖音视频，展示了美食制作过程 #美食 #烹饪 #生活",
+      "author": {
+        "unique_id": "foodlover123",
+        "nickname": "美食达人小王",
+        "avatar_url": "",
+        "follower_count": 150000,
+        "following_count": 500
+      },
+      "create_time": 1701234567,
+      "statistics": {
+        "digg_count": 12500,
+        "comment_count": 350,
+        "share_count": 280,
+        "play_count": 85000
+      },
+      "video": {
+        "play_url": "",
+        "cover_url": "",
+        "duration": 45,
+        "width": 720,
+        "height": 1280
+      },
+      "music": {
+        "title": "轻快的背景音乐",
+        "author": "音乐制作人",
+        "play_url": ""
+      },
+      "hashtags": [
+        "美食",
+        "烹饪",
+        "生活"
+      ],
+      "url": "https://www.douyin.com/video/7300000000000000001"
+    },
+    {
+      "aweme_id": "7300000000000000002",
+      "desc": "旅行vlog：探索神秘的古镇，发现隐藏的美景 #旅行 #vlog #古镇",
+      "author": {
+        "unique_id": "traveler_mike",
+        "nickname": "旅行者Mike",
+        "avatar_url": "",
+        "follower_count": 89000,
+        "following_count": 200
+      },
+      "create_time": 1701220000,
+      "statistics": {
+        "digg_count": 8900,
+        "comment_count": 245,
+        "share_count": 156,
+        "play_count": 42000
+      },
+      "video": {
+        "play_url": "",
+        "cover_url": "",
+        "duration": 120,
+        "width": 720,
+        "height": 1280
+      },
+      "music": {
+        "title": "民谣风格音乐",
+        "author": "独立音乐人",
+        "play_url": ""
+      },
+      "hashtags": [
+        "旅行",
+        "vlog",
+        "古镇"
+      ],
+      "url": "https://www.douyin.com/video/7300000000000000002"
+    },
+    {
+      "aweme_id": "7300000000000000003",
+      "desc": "科技分享：最新AI工具使用心得，效率提升100% #科技 #AI #效率",
+      "author": {
+        "unique_id": "tech_guru",
+        "nickname": "科技极客",
+        "avatar_url": "",
+        "follower_count": 320000,
+        "following_count": 1200
+      },
+      "create_time": 1701200000,
+      "statistics": {
+        "digg_count": 25600,
+        "comment_count": 890,
+        "share_count": 1200,
+        "play_count": 156000
+      },
+      "video": {
+        "play_url": "",
+        "cover_url": "",
+        "duration": 180,
+        "width": 720,
+        "height": 1280
+      },
+      "music": {
+        "title": "电子音乐",
+        "author": "电音制作人",
+        "play_url": ""
+      },
+      "hashtags": [
+        "科技",
+        "AI",
+        "效率"
+      ],
+      "url": "https://www.douyin.com/video/7300000000000000003"
+    }
+  ],
+  "statistics": {
+    "total_videos": 3,
+    "total_likes": 47000,
+    "total_comments": 1485,
+    "total_shares": 1636
+  }
+}

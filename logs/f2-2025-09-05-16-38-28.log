@@ -1,0 +1,10 @@
+2025-09-05 16:38:29,343 - f2 - ERROR - Traceback (most recent call last):
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/f2/apps/douyin/utils.py", line 218, in gen_real_msToken
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zhe/miniconda3/lib/python3.13/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://mssdk.bytedance.com/web/report'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+
+2025-09-05 16:38:29,347 - f2 - ERROR - 请前往QA文档 https://f2.wiki/faq 查看相关帮助
